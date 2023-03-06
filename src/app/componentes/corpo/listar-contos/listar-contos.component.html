@@ -1,0 +1,13 @@
+<!-- <button routerLink="/criarConto" class="listac">veja criar os contos</button> -->
+<h2>Lista de relatos</h2>
+<div class="mural" *ngIf="listaContos.length > 0, else semPensamentos" >
+    <div  *ngFor="let conto of listaContos"  >
+<app-conto [conto]="conto"  ></app-conto>
+    </div>
+
+</div>
+<ng-template #semPensamentos >
+    <div class="sem-contos">
+        <p>ainda não há contos</p>
+    </div>
+</ng-template>

@@ -1,0 +1,11 @@
+.footer{
+    
+    border: 3px solid var(--laranja);
+    background-color: var(--laranja-forte) ;
+    align-items: center;
+    
+}
+.seligue{
+    color: white;
+    text-align: center;
+}

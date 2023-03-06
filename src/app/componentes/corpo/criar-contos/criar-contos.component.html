@@ -1,0 +1,53 @@
+
+<h2 class="crie-titulo">crie seu conto</h2>
+
+<div class="formulario">
+<mat-form-field appearance="fill"  >
+  <mat-label  ></mat-label>
+  <input 
+  matInput  placeholder="titulo"
+  name="titulo" 
+  [(ngModel)]="conto.titulo"
+  >
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label  ></mat-label>
+  <input 
+  matInput 
+  placeholder="agente"
+  name="agente"
+  [(ngModel)]="conto.agente"
+  >
+  </mat-form-field>
+  
+  
+<mat-form-field appearance="fill">
+  <mat-label></mat-label>
+  <textarea 
+  matInput placeholder="local"
+  name="local" 
+  [(ngModel)]="conto.local"
+  ></textarea>
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label  ></mat-label>
+  <input 
+  matInput 
+  placeholder="data"
+  name="data"
+  [(ngModel)]="conto.data"
+  >
+  </mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label></mat-label>
+  <textarea 
+  matInput placeholder="texto" 
+  class="textof"
+  name="texto"
+  [(ngModel)]="conto.texto"
+  ></textarea>
+</mat-form-field>
+
+</div>
+<button (click)="criarConto()" class="botao-postar">postar</button>
+<button class="botao-cancelar" routerLink="/listarConto">cancelar</button>
